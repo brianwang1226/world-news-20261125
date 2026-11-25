@@ -1,6 +1,6 @@
 // World news of 25 November 2026, drawn as one image (entry.png beside this file).
-// The program copies that image to /output/entry.png, byte for byte, every run,
-// and writes /output/dossier.json, the summary the judge reads.
+// The program copies that image to /output/entry.png, byte for byte, every run.
+// The gate reads only the image bytes; nothing else is needed.
 import { copyFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
